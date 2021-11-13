@@ -1,0 +1,23 @@
+{
+  "name": "wcc_6_node_api_flareis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "project.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flareis/WCC_6_node_api_Flareis.git"
+  },
+  "author": "Flavia_dos_Reis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flareis/WCC_6_node_api_Flareis/issues"
+  },
+  "homepage": "https://github.com/Flareis/WCC_6_node_api_Flareis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
