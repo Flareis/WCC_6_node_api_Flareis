@@ -12,3 +12,5 @@ _criar novo produto
 _sempre que tivermos uma requisição post
 _vamos esperar por corpo de requisição
 _req. body
+
+Instalação do nodemon, ajuda a não precisar toda hora derrubar a porta e abrir outra, quando alterações forem feitas.*/
