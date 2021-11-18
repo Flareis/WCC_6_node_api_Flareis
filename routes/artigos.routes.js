@@ -14,3 +14,10 @@ PUT:
 DELETE: 
     _deletar meu artigo
 */
+
+module.exports = (app) => {
+    const artigosController = require("../config/db.config.js")
+    let router = require("express").Router();
+
+    router.post("/", )
+}
