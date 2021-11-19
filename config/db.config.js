@@ -7,7 +7,7 @@ const dotenv = require("dotenv"); //instalação de nova dependência, é possí
 dotenv.config();
 
 module.exports = {
-    connectionStringUrl: process.env.DB_CONECTION_STRING_URL,
+    connectionStringUrl: process.env.DB_CONNECTION_STRING_URL,
     dialect: "postgres"
 };
 

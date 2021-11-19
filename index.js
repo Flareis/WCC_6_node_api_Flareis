@@ -12,7 +12,9 @@ const database  = require ("./models");
 database.sequelizeDataBase.sync();
 
 const router = require ("./routes/artigos.routes");
+const routerUser = require ("./routes/users.routes");
 router(app);
+routerUser(app);
 
 app.listen(port, function (){
     console.log("Ouvindo a porta: ", port);

@@ -21,7 +21,7 @@ exports.create = (request, response) => {
 };
 
 exports.findAll = (request, response) => {
-    const users = User.findAll().then(function(data) {
+    const articles = tabelaArtigo.findAll().then(function(data) {
         response.send(data)
     })
     .catch(function (){
