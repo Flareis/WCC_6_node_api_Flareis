@@ -16,8 +16,12 @@ DELETE:
 */
 
 module.exports = (app) => {
-    const artigosController = require("../config/db.config.js")
+    const artigosController = require("../controllers/artigos.controller.js")
     let router = require("express").Router();
 
-    router.post("/", )
+    router.post("/", artigosController.create);
+
+    app.use("/artigos", router);
 }
+
+router.get("/", usersController.findAll)
