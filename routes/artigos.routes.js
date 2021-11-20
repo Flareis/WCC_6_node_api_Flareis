@@ -20,9 +20,18 @@ module.exports = (app) => {
     let router = require("express").Router();
 
     router.post("/", artigosController.create);
-    router.get("/", artigosController.findAll);
-    router.get("/:id", artigosController.findByPk);
 
+    router.get("/", artigosController.findAll);
+
+   /* router.get("/findByTitle", artigosController.findByTitle);
+
+    router.get("/findById/", artigosController.findById);
+
+    router.get("/published", artigosController.findAllPublished);
+
+    router.put("/:id", artigosController.uptade);
+
+    router.delete("/", artigosController.deleteAll);*/
 
     app.use("/artigos", router);
 }
