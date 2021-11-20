@@ -2,7 +2,7 @@
 
 /* GET: 
     _obter todos os artigos
-    _obter uma rtigo específico
+    _obter um artigo específico
     _obter todos os artigos publicados
 
 POST: 
@@ -21,6 +21,8 @@ module.exports = (app) => {
 
     router.post("/", artigosController.create);
     router.get("/", artigosController.findAll);
+    router.get("/:id", artigosController.findByPk);
+
 
     app.use("/artigos", router);
 }

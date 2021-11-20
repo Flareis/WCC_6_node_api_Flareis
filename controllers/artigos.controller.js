@@ -1,5 +1,6 @@
 //regras de negócios do sistema de artigos
-const { request } = require("express");
+const { request, response } = require("express");
+const { users } = require("../models");
 const database = require("../models");
 const tabelaArtigo = database.artigos;
 
@@ -28,3 +29,21 @@ exports.findAll = (request, response) => {
         response.status(500).send("Ocorreu um erro obtendo os artigos")
     });
 }
+
+//Retorna artigo pela identificação
+exports.findByPk = (request, reponse) => {
+    const article = tabelaArtigo.findByPk(request.params.id).then(function(article){
+    response.send("olá");/*
+       if(artId){
+            response.send(artId);
+        } else {
+            response.status(404).send({
+                message: "Não foi possível encontrar um usuário com o id: " // + request.query(123)
+            });
+        }*/
+    }).catch(function (error) {
+        response.status(500).send({
+            message: "Erro obtendo artigo id=" + request.params.id
+        });
+    });
+};
