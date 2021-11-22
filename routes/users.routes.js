@@ -4,5 +4,7 @@ module.exports = (app) => {
 
     router.get("/", usersController.findAll);
 
+    router.post("/", usersController.create);
+
     app.use("/usuarios", router);
 }

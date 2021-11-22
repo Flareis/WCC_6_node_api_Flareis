@@ -6,7 +6,10 @@ module.exports = (sequelizeDataBase, Sequelize) => {
         },
         nome: {
             type: Sequelize.STRING
+        },
+        area: {
+            type: Sequelize.STRING
         }
     })
     return users;
-}
+} 

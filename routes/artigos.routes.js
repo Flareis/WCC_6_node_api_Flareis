@@ -23,15 +23,17 @@ module.exports = (app) => {
 
     router.get("/", artigosController.findAll);
 
-   /* router.get("/findByTitle", artigosController.findByTitle);
-
-    router.get("/findById/", artigosController.findById);
-
     router.get("/published", artigosController.findAllPublished);
 
-    router.put("/:id", artigosController.uptade);
+    router.get("/findByTitle", artigosController.findByTitle);
 
-    router.delete("/", artigosController.deleteAll);*/
+    router.get("/findById", artigosController.findById);
+
+    router.put("/:id", artigosController.update);
+
+    router.delete("/", artigosController.deleteAll);
+
+    router.delete("/:id", artigosController.deleteOne);
 
     app.use("/artigos", router);
 }
